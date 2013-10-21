@@ -15,7 +15,7 @@ from django.utils.translation import ugettext_lazy as _
 from celery import current_app
 from celery import states
 from celery.task.control import broadcast, revoke, rate_limit
-from celery.utils.text import abbrtask
+from celery.utils .text import abbrtask as abbrtask
 
 from .admin_utils import action, display_field, fixedwidth
 from .models import (
